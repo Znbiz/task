@@ -128,7 +128,7 @@ bc: $& config.h bc.$O $(BCOFILES) global.$O
 	$(CC) $(LDFLAGS) -o bc.html bc.$O $(BCOFILES) global.$O $(LIBS)
 
 dc: $(DCOFILES) number.o
-	$(CC) $(LDFLAGS) -o dc $(DCOFILES) number.o $(LIBS)
+	$(CC) $(LDFLAGS) -o dc.js $(DCOFILES) number.o $(LIBS)
 
 sbc: sbc.$O $(BCOFILES) global.$O
 	$(CC) -o sbc $(LDFLAGS) sbc.$O $(BCOFILES) global.$O $(LIBS)
